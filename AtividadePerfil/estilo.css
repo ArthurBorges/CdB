@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* inclui o preenchimento e a borda na largura e altura total de um elemento*/
+  }
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo{
+    background-image: url('images/bg-pattern-card.svg');
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    /* min-height: 33%; */
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    transform: translateY(50%);
+    height: 110px;
+}
+
+.meio{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.detalhes{
+    display: flex;
+}
+
+.nome{
+    font-weight: 700;
+    margin: 5px;
+}
+
+.idade{
+    color: hsl(0, 0%, 59%);
+    margin: 5px;
+}
+
+.local{
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    margin: 5px;
+}
+
+.base{
+    border-top: rgba(0, 0, 0, 0.1) solid 1px;
+    display: flex; 
+    text-align: center;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.numero{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.tipo{
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
