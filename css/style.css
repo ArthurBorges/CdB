@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: #ff7a7a;
+    color: #fff;
+    height: 100vh;
+    text-align: left;
+    display: flex;
+}
+
+.texto{
+    margin: 1.5rem;
+    padding: 1.5rem 0;
+    flex:1;
+}
+
+.texto__head{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;  
+}
+
+.texto__p{
+    padding-right: 2rem;
+}
+
+.container{
+    flex:1;
+    margin: 1.5rem;
+}
+
+.caixatopo {
+    background-color: #6055a5;
+    padding: 1rem 3.5rem;
+    border-radius: 7px;
+    box-shadow: 3px 6px 6px #3e3c49;
+  }
+
+.caixatopo--bold {
+    font-weight: 700;
+}
+
+.form {
+    background-color: #fff;
+    margin: 1.5rem 0;
+    padding: 2rem 1rem;
+    border-radius: 7px;
+    box-shadow: 3px 6px 6px #3e3c49;
+  }
+
+.form--field {
+    width: 90%;
+    height: 3rem;
+    margin: 0.75rem;
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid #b9b6d3;
+}
+
+.form__button {
+    width: 90%;
+    margin-top: 0.5rem;
+    background-color: #38cc8c;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    height: 3rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form__button:hover {
+    opacity: 60%;
+}
+
+.form__p {
+    color: #b9b6d3;
+    font-size: 0.7rem;
+    padding-top: 1rem;
+    margin: 0 1rem;
+  }
+   
+  .form--bold {
+    color: #ff7a7a;
+    font-weight: 700;
+  }
+  
+  .form--error {
+    display: none;
+    color: #ff7a7a;
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    text-align: right;
+    margin-right: 5%;
+  }
+  
+  .form--input.error
+  .form--error {
+    display: block;
+} 
+
+.form--input.error
+.form--field {
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border: 2px #ff7a7a solid;
+}
